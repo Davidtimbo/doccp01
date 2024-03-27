@@ -31,12 +31,12 @@ Script rodado com sucesso no doccp01! \n-$(date '+%a %d %b %H:%M:%S')- \nTotal d
   echo "$success_message" >> /home/crase/executado.txt
 
   # Envia e-mail de sucesso
-  echo -e "$success_message" | sendEmail -o tls=no -f naoresponda@crasemail.com.br -t "$EMAIL1" -u "Relatório - Crontab rodado" -m "$success_message" -s 172.16.0.4
+  echo -e "$success_message" | sendEmail -o tls=no -f naoresponda@crasemail.com.br -t "$EMAIL1" -u "Relatório - Crontab rodado" -m "$success_message" -s # Colocar aqui o IP do servidor SMTP interno.
 
 else
   failure_message="Falha no script doccp01. -$(date '+%a %d %b %H:%M:%S')-"
   echo "$failure_message" >> /home/crase/executado.txt
 
   # Envia e-mail de falha
-  echo "$failure_message" | sendEmail -o tls=no -f naoresponda@crasemail.com.br -t "$EMAIL1" -u "Relatório - Crontab rodado" -m "$failure_message" -s 172.16.0.4
+  echo "$failure_message" | sendEmail -o tls=no -f naoresponda@crasemail.com.br -t "$EMAIL1" -u "Relatório - Crontab rodado" -m "$failure_message" -s # Colocar aqui o IP do servidor SMTP interno.
 fi
