@@ -32,7 +32,7 @@
    - Substitua a variável `EMAIL1` pelo endereço de e-mail para receber as notificações.
 
 4. **Configuração do servidor de e-mail:**
-   - As configurações do servidor de e-mail (SMTP) estão definidas para para um IP específico. Substitua conforme necessário.
+   - As configurações do servidor de e-mail (SMTP) estão definidas para um IP específico intero SMTP. Substitua conforme necessário.
      
  <br></br>
 
